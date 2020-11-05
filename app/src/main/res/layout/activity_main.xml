@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/stat"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/moy1"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="279dp"
+        android:layout_height="47dp"
+        android:background="@drawable/input_style"
+        android:ems="10"
+        android:hint="     first moyenne"
+        android:inputType="numberDecimal"
+        android:paddingLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <EditText
+        android:id="@+id/moy2"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="279dp"
+        android:layout_height="47dp"
+        android:background="@drawable/input_style"
+        android:ems="10"
+        android:hint="     second moyenne"
+        android:inputType="numberDecimal"
+        android:paddingLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moy1"
+        app:layout_constraintVertical_bias="0.120000005" />
+
+    <EditText
+        android:id="@+id/moy3"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="279dp"
+        android:layout_height="47dp"
+        android:background="@drawable/input_style"
+        android:ems="10"
+        android:hint="     third moyenne"
+        android:inputType="numberDecimal"
+        android:paddingLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moy2"
+        app:layout_constraintVertical_bias="0.17000002" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="185dp"
+        android:layout_height="58dp"
+        android:background="@drawable/button_custom"
+        android:hapticFeedbackEnabled="true"
+        android:onClick="calculer"
+        android:text="Submit"
+        android:textIsSelectable="false"
+        android:textSize="24sp"
+        app:backgroundTint="#DF4ACB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moy3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
